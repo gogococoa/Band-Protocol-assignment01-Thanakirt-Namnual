@@ -1,6 +1,8 @@
 const bossBabysRevenge = (s: string) => {
     let shot: number = 0; // count the time that Boss Baby was shot
 
+    if (s === "") return "Bad Boy"; // case : empty string
+
     if (s.startsWith("R")) return "Bad Boy"; // case : Boss Baby initiate shot first
 
     if (s.endsWith("S")) return "Bad Boy";
